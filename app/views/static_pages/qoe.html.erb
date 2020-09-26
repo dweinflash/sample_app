@@ -1,10 +1,29 @@
 <% provide(:title, "QoE") %>
-<h1>Predicting Quality of Experience (QoE) on Mobile Broadband</h1>
+<h1>Predicting Quality of Experience on Mobile Broadband</h1>
 <h2>Summary</h2>
 <p>
-  Using radio (signal strength) and network level (throughput) measurements, deploy an array of machine
-  learning algorithms to predict user experience on video streaming services.
+  Quality of experience (QoE) has become an increasingly important metric for today’s modern service providers.
+  Discovering and optimizing the factors that determine user experience has thus become an essential goal for
+  network operators. In this project, I teamed with the Mobility Management and Networking (MOMENT) Lab at UC Santa Barbara
+  to focus on exploring the link between key radio measurements and user experience in the context of video streaming sessions.
 </p>
+<h2>Goals</h2>
+<ul>
+  <li>Explore several machine learning algorithms to predict quality of experience from radio and network measurements.
+    <ul>
+      <li>Random Forest</li>
+      <li>ARIMA</li>
+      <li>Recurrent Neural Network (LSTM)</li>
+    </ul>
+  </li>
+  <li>Investigate the effect of radio measurements and quality of service (QoS) metrics on quality of experience.
+    <ul>
+      <li>Radio Measurement: Reference Signal Received Power (RSRP)</li>
+      <li>Quality of Service Measurement: Throughput</li>
+    </ul>
+  </li>
+</ul>
+    
 <h2>Documents</h2>
 <h3>
   <%= link_to image_tag("Slides.png", size: "80x100", alt: "Slides"), asset_path("QoE_Presentation.pdf") %>

@@ -34,7 +34,7 @@ textarea {
 
 li
 {
-margin: 0.5em;
+  margin: 0.5em;
 }
 
 /* typography */
@@ -74,6 +74,11 @@ h3 {
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+}
+
+/* about */
+.style_image {
+  margin-top: 40px;
 }
 
 /* header */
@@ -117,7 +122,7 @@ footer {
     }
   }
   
-  /* miscellaneous */
+/* miscellaneous */
 
 .debug_dump {
   clear: both;
