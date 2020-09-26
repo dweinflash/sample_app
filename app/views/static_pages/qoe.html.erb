@@ -23,7 +23,17 @@
     </ul>
   </li>
 </ul>
-    
+<h2>Takeaways</h2>
+<ul>
+  <li>Random Forest and ARIMA can be used to predict buffer level with high accuracy, precision and recall.
+    <ul>
+      <li>Random forest model was especially effective in segmenting network level measurements using both a quantile binning
+      and uniform binning approach.</li>
+      <li>ARIMA able to quickly output accurate predictions on QoE using a linear regression model based on lagged observations.</li>
+    </ul>
+  </li>
+  <li>Simpler models perform noticeably better than compute-intensive LSTM networks.</li>
+</ul>
 <h2>Documents</h2>
 <h3>
   <%= link_to image_tag("Slides.png", size: "80x100", alt: "Slides"), asset_path("QoE_Presentation.pdf") %>
