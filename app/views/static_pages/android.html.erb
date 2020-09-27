@@ -2,8 +2,40 @@
 <h1>Android Network Tools</h1>
 <h2>Summary</h2>
 <p>
-  Application that provides a set of tools to measure network performance, network speed and web page performance
-  from an Android device. Performance statistics are gathered in the application and exported via Google Drive.
+  In this project I teamed with the Mobility Management and Networking (MOMENT) Lab at UC Santa Barbara to introduce
+  Edain Mobile, an Android application that provides a set of tools to measure network performance, network speed and
+  web page performance. The intention of Edain Mobile is to evaluate network function in resource constrained environments.
+  The three primary modules in Edain Mobile are Ping, Speed Test and Page Load.
+</p>
+<center>
+  <%= image_tag "android_home.png", :class => "style_image", :size => "200x300" %>
+  <%= image_tag "android_ping.png", :class => "style_image", :size => "200x300" %>
+  <%= image_tag "android_speed.png", :class => "style_image", :size => "200x300" %>
+  <%= image_tag "android_plt.png", :class => "style_image", :size => "200x300" %>
+</center>
+<p></p>
+<center>
+  <i>Edain Mobile</i>
+</center>
+<h2>Ping</h2>
+<p>
+  The Ping module sends a specified amount of packets to a chosen network host. Results are aggregated in a file (.csv), 
+  which may be cleared and re-written using the Clear button. The resulting .csv file (ping.csv) may be exported from the 
+  app via Google Drive using the corresponding Export button.
+</p>
+<h2>Speed Test</h2>
+<p>
+  The Speed Test module runs and collects results from speedtest.net, testing the speed and performance of the device's internet
+  connection. Tests are run at user-defined intervals (minutes), where class duration is usually 75 minutes and testing interval 
+  is typically every 15 minutes. Results are aggregated in a common .csv file (speedtest.csv) and may be cleared or exported via 
+  Google Drive using the corresponding Clear and Export buttons.
+</p>
+<h2>Page Load</h2>
+<p>
+  The Page Load module utilizes WebPageTest.org to measure and analyze the performance of web pages. Tests are performed one domain 
+  at a time, where test time is limited to a maximum user-defined Timeout Seconds. County, Location and Provider inputs are also 
+  required and are stored in the filename of the test results file (.csv). Test result files are stored in the device's Download 
+  folder.
 </p>
 <h2>Documents</h2>
 <h3>
