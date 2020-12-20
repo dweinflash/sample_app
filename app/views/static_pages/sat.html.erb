@@ -1,0 +1,41 @@
+<% provide(:title, "SAT Based Scheduler") %>
+<h1>A SAT Based Scheduler for Interpreters and Student-Teacher Conferences</h1>
+<h2>Summary</h2>
+<p>
+  Twice a year, the <a href="https://www.ihc.ucsb.edu/">Interdisciplinary Humanities Center at UC Santa Barbara</a> 
+  matches volunteer language interpreters with student-teacher conferences throughout the Goleta and Santa Barbara school districts. 
+  After a few successful iterations, the demand for interpreters has increased enough to justify the application of a 
+  sophisticated scheduling system. In this project, I teamed up with the <i>Interdisciplinary Humanities Center</i> to
+  develop such a system, utilizing Google's CP-SAT Solver to arrange a schedule that fairly, conveniently and optimally
+  pairs volunteer language interpreters with student-teacher conferences.
+</p>
+<h1></h1>
+<center>
+  <%= image_tag "Overview.png", :size => "750x400" %>
+</center>
+<h2>Goals</h2>
+<ul>
+  <li>Collect and organize all interpreter availability and teacher meeting request data.</li>
+  <li>When pairing interpreters with student-teacher conferences, the scheduling approach should be:</li>
+      <ul>
+      <li><i>Objective-driven</i>: A maximal number of student-teacher conferences include an interpreter.</li>
+      <li><i>Constraint-driven</i>: Schedules are fair, convenient and practical for all interpreters and teachers.</li>
+    </ul>
+  <li>Create and distribute personalized schedules for both interpreters and teachers.</li>
+</ul>
+<h2>Takeaways</h2>
+<ul>
+  <li>Google’s open source software suite OR-Tools provides many useful models for constraint programming problems.</li>
+  <li>The solution space of all combinations matching interpreters to student-teacher conferences is non-trivially large.</li>
+  <li>As expected, the SAT solver does not scale efficiently and quickly grows unmanageable as input increases.</li>
+  <li>While unable to scale efficiently, Google's CP-SAT Solver nonetheless provides an optimal schedule, allowing the <i>Interdisciplinary 
+  Humanities Center</i> <br /> at UC Santa Barbara to effectively pair volunteer interpreters with student-teacher conferences across the 
+  Goleta and Santa Barbara school disricts.</li>
+</ul>
+
+<h2>Documents</h2>
+<h3>
+  <%= link_to image_tag("Slides.png", size: "80x100", alt: "Slides"), asset_path("SAT_Presentation.pdf") %>
+  <%= link_to image_tag("PDF.png", size: "80x100", alt: "Report"), asset_path("SAT_Report.pdf") %>
+  <%= link_to image_tag("GitHub.png", size: "90x100", alt: "GitHub"), 'https://github.com/dweinflash/IHC-Scheduler_SAT-Solver' %>
+</h3>
