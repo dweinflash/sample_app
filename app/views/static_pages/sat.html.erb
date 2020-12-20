@@ -7,15 +7,15 @@
   After a few successful iterations, the demand for interpreters has increased enough to justify the application of a 
   sophisticated scheduling system. In this project, I teamed up with the <i>Interdisciplinary Humanities Center</i> to
   develop such a system, utilizing Google's CP-SAT Solver to arrange a schedule that fairly, conveniently and optimally
-  pairs volunteer language interpreters with student-teacher conferences.
+  pairs interpreters with student-teacher conferences.
 </p>
 <h1></h1>
 <center>
-  <%= image_tag "Overview.png", :size => "750x400" %>
+  <%= image_tag "Overview.png", :size => "700x350" %>
 </center>
 <h2>Goals</h2>
 <ul>
-  <li>Collect and organize all interpreter availability and teacher meeting request data.</li>
+  <li>Collect and organize all interpreter availability and teacher meeting requests.</li>
   <li>When pairing interpreters with student-teacher conferences, the scheduling approach should be:</li>
       <ul>
       <li><i>Objective-driven</i>: A maximal number of student-teacher conferences include an interpreter.</li>
@@ -26,11 +26,9 @@
 <h2>Takeaways</h2>
 <ul>
   <li>Google’s open source software suite OR-Tools provides many useful models for constraint programming problems.</li>
-  <li>The solution space of all combinations matching interpreters to student-teacher conferences is non-trivially large.</li>
+  <li>The solution space of all combinations matching interpreters to student-teacher conferences is considerably large.</li>
   <li>As expected, the SAT solver does not scale efficiently and quickly grows unmanageable as input increases.</li>
-  <li>While unable to scale efficiently, Google's CP-SAT Solver nonetheless provides an optimal schedule, allowing the <i>Interdisciplinary 
-  Humanities Center</i> <br /> at UC Santa Barbara to effectively pair volunteer interpreters with student-teacher conferences across the 
-  Goleta and Santa Barbara school disricts.</li>
+  <li>While unable to scale efficiently, Google's CP-SAT Solver nonetheless provides an optimal schedule.</li>
 </ul>
 
 <h2>Documents</h2>
