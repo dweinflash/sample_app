@@ -9,10 +9,11 @@
   develop such a system, utilizing Google's CP-SAT Solver to arrange a schedule that fairly, conveniently and optimally
   pairs interpreters with student-teacher conferences.
 </p>
-<h1></h1>
-<center>
-  <%= image_tag "Overview.png", :size => "700x350" %>
-</center>
+<h4>
+  <center>
+    <%= image_tag "Overview.png", :size => "700x350" %>
+  </center>
+</h4>
 <h2>Goals</h2>
 <ul>
   <li>Collect and organize all interpreter availability and teacher meeting requests.</li>
@@ -26,7 +27,7 @@
 <h2>Takeaways</h2>
 <ul>
   <li>Google’s open source software suite OR-Tools provides many useful models for constraint programming problems.</li>
-  <li>The solution space of all combinations matching interpreters to student-teacher conferences is considerably large.</li>
+  <li>The solution space of all combinations matching interpreters to student-teacher conferences is huge.</li>
   <li>As expected, the SAT solver does not scale efficiently and quickly grows unmanageable as input increases.</li>
   <li>While unable to scale efficiently, Google's CP-SAT Solver nonetheless provides an optimal schedule.</li>
 </ul>

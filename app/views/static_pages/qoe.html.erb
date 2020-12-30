@@ -8,6 +8,12 @@
   and Networking (MOMENT) Lab</a> at UC Santa Barbara to focus on exploring the link between key radio measurements 
   and user experience in the context of video streaming sessions.
 </p>
+<center>
+  <%= image_tag "QoE_Results.png", :size => "800x400" %>
+</center>
+<center>
+  <i>Model Accuracy and Runtime - Buffer Size Prediction</i>
+</center>
 <h2>Goals</h2>
 <ul>
   <li>Explore several machine learning algorithms to predict quality of experience from radio and network measurements.
@@ -35,14 +41,6 @@
   </li>
   <li>Simpler models perform noticeably better than compute-intensive LSTM networks.</li>
 </ul>
-<h2>
-  <center>
-    <%= image_tag "QoE_Results.png", :size => "800x400" %>
-  </center>
-</h2>
-<center>
-  <i>Model Accuracy and Runtime - Buffer Size Prediction</i>
-</center>
 <h2>Documents</h2>
 <h3>
   <%= link_to image_tag("Slides.png", size: "80x100", alt: "Slides"), asset_path("QoE_Presentation.pdf") %>

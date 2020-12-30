@@ -6,6 +6,13 @@
   a multiple linear regression model, I determine the effectiveness of a beer's <i>style</i>, <i>ABV</i>, <i>age</i>, <i>year</i> and 
   <i>region</i> in predicting a beer's rating.
 </p>
+<center>
+  <%= image_tag "Beer_ScoresPerState.png", :class => "style_image", :size => "450x320" %>
+  <%= image_tag "Beer_KFold.png", :class => "style_image", :size => "450x320" %>
+</center>
+<center>
+  <i>Beer Rating & Model Validation</i>
+</center>
 <h2>Goals</h2>
   <li>Pre-process the Beer dataset.</li>
   <ul>
@@ -24,10 +31,6 @@
     <li>Beer <i>style</i> an important factor based on small p-value.</li>
   </ul>
   <li>Predicted rating suffers if beer brewed in the West.</li>
-<center>
-  <%= image_tag "Beer_ScoresPerState.png", :class => "style_image", :size => "550x400" %>
-  <%= image_tag "Beer_KFold.png", :class => "style_image", :size => "550x400" %>
-</center>
 <h2>Documents</h2>
 <h3>
   <%= link_to image_tag("GitHub.png", size: "90x100", alt: "GitHub"), 'https://github.com/dweinflash/Beer' %>
