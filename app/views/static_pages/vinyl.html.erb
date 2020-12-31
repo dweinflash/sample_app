@@ -1,0 +1,27 @@
+<% provide(:title, "Vinyl") %>
+<h1>Vinyl Videos</h1>
+<h2>Summary</h2>
+<p>
+  In this project I set out to add a visual component to my record collection. Specifically, I put together 
+  a music video file and added lyric subtitles that sync up with the music when played on vinyl. To watch the video while 
+  listening to the record, I added the video file to a Raspberry Pi and hooked the Pi up to a video projector, making sure to play 
+  the video in time with the needle on the record. The result is a karaoke-style music video projected onto the wall with subtitles 
+  displayed in sync with the music on the record.
+</p>
+<h3>
+<center>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/VKatghcquZU" frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+</h3>
+<h2>Overview</h2>
+  <li>Gather all lyrics for the record.</li>
+  <li>Use iMovie to compile a music video for the record.</li>
+  <li>Use GarageBand to record the vinyl and export the audio file.</li>
+  <li>Use the lyrics, audio file and <a href="http://www.lrcgenerator.com/">LRC Generator</a> to create a <i>.lrc</i> file.</li>
+  <li>Format the <i>.lrc</i> file as <i>.ass</i> to get a fading subtitles effect.</li>
+  <li>Use <a href="https://ffmpeg.org/">FFmpeg</a> to add the subtitles to the music video file.</li>
+<h2>Documents</h2>
+<h3>
+  <%= link_to image_tag("GitHub.png", size: "90x100", alt: "GitHub"), 'https://github.com/dweinflash/VinylVideos' %>
+</h3>

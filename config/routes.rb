@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get  '/rnn',       to: 'static_pages#rnn'
   get  '/beer',      to: 'static_pages#beer'
   get  '/az',        to: 'static_pages#az'
+  get  '/vinyl',      to: 'static_pages#vinyl'
   get  '/contact',   to: 'static_pages#contact'
   get  '/signup',    to: 'users#new'
   post '/signup',    to: 'users#create'
