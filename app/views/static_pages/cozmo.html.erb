@@ -2,11 +2,14 @@
 <h1>Deep Learning and Object Classification at the Edge</h1>
 <h2>Summary</h2>
 <p>
-  This project integrates an IoT device, Edge device and Cloud computing environment to explore machine learning at the Edge.
-  Specifically, the project introduces a system that uses a robot’s camera feed and a deep learning model trained 
-  in a Cloud environment to perform object classification on a Raspberry Pi. After setting up the infrastructure, 
-  the project focuses on evaluating the most optimal deep learning models to deploy at the Edge, analyzing the trade 
-  offs between size, speed and accuracy to best perform object classification.
+  This project integrates an 
+  <a href="https://www.digitaldreamlabs.com/pages/meet-cozmo">IoT device</a>, 
+  <a href="https://www.raspberrypi.org/">Edge device</a>, and
+  <a href="https://colab.research.google.com/notebooks/intro.ipynb#recent=true">Cloud computing environment</a> 
+  to explore machine learning at the Edge. Specifically, the project introduces a system that uses a robot’s camera 
+  feed and a deep learning model trained in a Cloud environment to perform object classification on a Raspberry Pi. 
+  After setting up the infrastructure, the project focuses on evaluating the most optimal deep learning models to 
+  deploy at the Edge, analyzing the trade-offs between model size, speed and accuracy to best perform object classification.
 </p>
 <center>
   <%= image_tag "Cozmo_architecture.png", :size => "600x400" %>
@@ -15,21 +18,22 @@
 <ul>
   <li>Perform on-device machine learning inference on a Raspberry Pi.</li>
   <li>Minimize latency and optimize the computing resources between an IoT device and a deep learning framework.</li>
-  <li>Discover an optimal image classification model for the Edge, taking into account size, accuracy and inference speed.</li>
+  <li>Discover an optimal image classification model for the Edge, taking into account model size, accuracy and speed.</li>
   <li>Train an image classification model to recognize the hand gestures "rock, paper, scissors".</li>
 </ul>
 <h2>Takeaways</h2>
 <ul>
-  <li>Deploying machine learning models to the Edge and performing inference on-device very achievable with TensorFlow Lite.</li>
-  <li>Scaled neural networks (EfficientNets) more effective than popular Convolutional Neural Networks (Mobilenet, Resnet and Inception v3) 
+  <li>Deploying machine learning models to the Edge and performing inference on-device very achievable with <a href="https://www.tensorflow.org/lite">TensorFlow Lite</a>.</li>
+  <li>Scaled neural networks (EfficientNets) more effective than popular convolutional neural networks (MobileNet, ResNet and Inception-v3) 
   at the Edge.
     <ul>
-      <li>EfficientNets successfully use compound scaling to achieve high accuracy and minimize floating point operations with limited size.</li>
+      <li>EfficientNets are very compact and use <i>compound scaling</i> to achieve high accuracy while minimizing floating point operations.</li>
     </ul>
   </li>
-  <li>While more work needs to be done in order to increase the model’s "rock, paper, scissors" generalizability, the EfficientNet model provides
-  a promising solution to delivering machine learning inference at the Edge.
-</li>
+  <li>More work is necessary to increase the model’s "rock, paper, scissors" generalizability.</li>
+    <ul>
+      <li>Nonetheless, the EfficientNet model provides a promising solution to delivering machine learning at the Edge.</li>
+    </ul>
 </ul>
 
 <h2>Documents</h2>

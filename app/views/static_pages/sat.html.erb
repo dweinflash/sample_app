@@ -6,8 +6,8 @@
   matches volunteer language interpreters with student-teacher conferences throughout the Goleta and Santa Barbara school districts. 
   After a few successful iterations, the demand for interpreters has increased enough to justify the application of a 
   sophisticated scheduling system. In this project, I teamed up with the <i>Interdisciplinary Humanities Center</i> to
-  develop such a system, utilizing Google's CP-SAT Solver to arrange a schedule that fairly, conveniently and optimally
-  pairs interpreters with student-teacher conferences.
+  develop such a system, utilizing <a href="https://developers.google.com/optimization">Google's CP-SAT Solver</a> to arrange a schedule 
+  that fairly, conveniently and optimally pairs interpreters with student-teacher conferences.
 </p>
 <h4>
   <center>
@@ -26,7 +26,8 @@
 </ul>
 <h2>Takeaways</h2>
 <ul>
-  <li>Google’s open source software suite OR-Tools provides many useful models for constraint programming problems.</li>
+  <li>Google’s open source software suite <a href="https://developers.google.com/optimization">OR-Tools</a> provides 
+    many useful models for constraint programming problems.</li>
   <li>The solution space of all combinations matching interpreters to student-teacher conferences is huge.</li>
   <li>As expected, the SAT solver does not scale efficiently and quickly grows unmanageable as input increases.</li>
   <li>While unable to scale efficiently, Google's CP-SAT Solver nonetheless provides an optimal schedule.</li>
