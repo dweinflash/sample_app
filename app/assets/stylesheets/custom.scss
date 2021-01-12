@@ -82,6 +82,16 @@ h4 {
   color: $gray-light;
 }
 
+h5 {
+  font-size: 2em;
+  letter-spacing: -1px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  text-align: left;
+  font-weight: normal;
+  color: $gray-light;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.7em;
@@ -89,7 +99,7 @@ p {
 
 /* images */
 .style_image {
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 10px;
   border: 1px solid #555;
 }
