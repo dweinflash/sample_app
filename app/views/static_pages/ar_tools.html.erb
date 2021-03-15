@@ -1,0 +1,47 @@
+<% provide(:title, "AR:Toolkit") %>
+<h1>Augmented Reality: Toolkit</h1>
+<h2>ARKit</h2>
+<p>
+  ARKit, a powerful augmented reality framework provided by Apple, allowed me to place virtual content 
+  at tracked, real-world locations within my apartment. Once placed, ARKit provided the hand gestures necessary 
+  to interact with and scale the virtual content. Ultimately, by using world tracking and ray casting, ARKit convincingly 
+  arranged virtual models in my world space and made for a realistic augmented reality experience.
+</p>
+<center>
+  <%= image_tag "coffeecup.png", :class => "style_image", :size => "450x320" %>
+</center>
+<center>ARKit: Virtual Model</center>
+<h2>World Tracking</h2>
+<p>
+  ARKit uses a world tracking configuration to detect real-world surfaces. In order to establish world tracking, ARKit must 
+  first get a sense of perspective. Such a sense of perspective can be established by moving the device's camera throughout
+  the world space, using an ARKit interface named <i>ARCoachingOverlayView</i> to instruct the user to explore the physical and
+  build a virtual sense of reference.
+</p>
+<center>
+  <%= image_tag "worldtrack.png", :class => "style_image", :size => "320x400" %>
+</center>
+<center>ARKit: World Tracking</center>
+<h2>Focus Square</h2>
+<p>
+  To get an idea of where to place virtual content in the world space, a focus square is annotated onto the screen. The primary 
+  purpose of the focus square is to give a visual confirmation of the shapes, alignments and surfaces detected by ARKit. To detect 
+  surfaces, ARKit uses an <i>ARRaycastQuery</i>, defining where the 3D location in the world space exists as a 2D point on the device screen.
+</p>
+<center>
+  <%= image_tag "FocusSquare.png", :class => "style_image", :size => "450x320" %>
+</center>
+<center>ARKit: Focus Square</center>
+<h2>Gestures</h2>
+<p>
+  A pan gesture recognizer allows users to move virtual content on screen. By clicking and dragging a virtual object, the application 
+  calculates the content's orientation information and uses a <i>hit test</i> to refine the position of the object in the world. What 
+  results is a refined virtual object that moves across the plane detected by ARKit.
+</p>
+<h3>
+  <center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uF0tGEfhltU" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center>
+</h3>
+<center>ARKit: Gestures</center>

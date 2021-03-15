@@ -1,0 +1,55 @@
+<% provide(:title, "AR:Models") %>
+<h1>Augmented Reality: Models</h1>
+<h2>Floorplan</h2>
+<p>
+  To measure my apartment dimensions I relied on old-fashioned techniques (tape measurer) and innovative computer 
+  vision software. In terms of the new technology, I utilized the iOS application <a href="https://www.magicplan.app/">Magicplan</a>
+  to construct a 2D and 3D models of my living space. Using the measurements provided by the models, I crafted 3D models of my apartment
+  to virtually render wall studs in my iOS ARKit application.
+</p>
+<center>
+  <%= image_tag "ArriveFloorplan.png", :class => "style_image", :size => "450x300" %>
+</center>
+<center>Apartment Floorplan</center>
+<h2>Magicplan</h2>
+<p>
+  The Magicplan software provided a simple and intuitive application to measure my apartment and create 3D models. Using computer vision in the context 
+  of object recognition, Magicplan allows a user to measure a living space by walking around the space and aligning the camera with the room's features. 
+  Once finished, Magicplan outputs a 2D floorplan and 3D model of the space, highlighting the dimensions and prominent features in the room.
+</p>
+<center>
+  <%= image_tag "MagicPlan.png", :class => "style_image", :size => "300x300" %>
+  <%= image_tag "MagicPlanSCN.png", :class => "style_image", :size => "450x300" %>
+</center>
+<center>Magicplan: Floorplan & 3D Model</center>
+<h3>
+  <center>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PqLijPgLHXg" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center>
+</h3>
+<center>Magicplan: Demo</center>
+<h2>Autodesk</h2>
+<p>
+  Computer-aided design software provided another solution when generating 3D models. In particular, I experimented with the 
+  design software <a href="https://www.autodesk.com/products/fusion-360/overview?term=1-YEAR&support=null">Autodesk: Fusion 360</a>
+  to generate 3D models that scaled according to the wall space in my apartment's living room. Autodesk provided an intuitive platform 
+  with which to build and export 3D models that matched my apartment floorplan.
+</p>
+<center>
+  <%= image_tag "Autodesk.png", :class => "style_image", :size => "450x300" %>
+</center>
+<center>Autodesk: 3D Model</center>
+<h2>SceneKit</h2>
+<p>
+  In addition to generating models with proprietary software, I also experimented with designing 3D models from within Xcode's
+  <a href="https://developer.apple.com/documentation/scenekit/">SceneKit Editor</a>. The SceneKit Editor not only easily imported 
+  external models (.obj), converting to the relevant file extension when necessary (.scn), but also offered the tools necessary to 
+  design and export custom 3D models. The two figures below demonstrate a model imported into SceneKit from Autodesk and another 
+  designed from scratch from within the application.
+</p>
+<center>
+  <%= image_tag "FloorplanSCN.png", :class => "style_image", :size => "450x300" %>
+  <%= image_tag "StudsSCN.png", :class => "style_image", :size => "450x300" %>
+</center>
+<center>SceneKit: Imported & Designed 3D Models</center>

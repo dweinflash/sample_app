@@ -1,0 +1,27 @@
+<% provide(:title, "AR") %>
+<h1>Augmented Reality: Virtual Stud Finder</h1>
+<h2>Summary</h2>
+<p>
+  In this project I set out to develop an application that demonstrates augmented reality in a useful setting. Specifically, 
+  I experimented with the augmented reality platform <a href="https://developer.apple.com/augmented-reality/">ARKit</a> to develop
+  an iOS application that virtually renders wall stud locations in my apartment. I've split the project into three categories – 
+  <a href="/ar_tools">Toolkit</a>, <a href="/ar_models">Models</a> and <a href="/ar_inter">Interaction</a> – where each category
+  is used to illustrate my first development experience in the world of augmented reality.
+</p>
+<h3>
+  <center>
+    <%= image_tag "MagicPlan.gif", :class => "style_image", :size => "500x300" %>
+  </center>
+</h3>
+<h2>Goals</h2>
+  <li>Utilize Apple's ARKit to place virtual content at tracked, real-world locations within my apartment.</li>
+  <li>Measure and model my apartment with computer-aided design and augmented reality software.</li>
+  <li>Create an iOS application that renders virtual wall studs to match the world space in my apartment.</li>
+<h2>Takeaways</h2>
+  <li>ARKit provides many useful functions to perform world tracking, surface detection and model placement.</li>
+  <li><a href="https://www.magicplan.app/">Magicplan</a> uses augmented reality and computer vision effectively to model and export 3D spaces.</li>
+  <li>In addition to world tracking, image tracking may be an effective approach to accurately render virtual wall studs.</li>
+<h2>Documents</h2>
+<h3>
+  <%= link_to image_tag("GitHub.png", size: "90x100", alt: "GitHub"), 'https://github.com/dweinflash/AR_StudFinder' %>
+</h3>

@@ -1,0 +1,32 @@
+<% provide(:title, "AR:Interaction") %>
+<h1>Augmented Reality: Interaction</h1>
+<h2>Floorplan Model</h2>
+<p>
+  To measure the accuracy of my 3D modeling software, I imported and rendered a virtual model onto the walls of
+  my apartment's kitchen and living room. Using pan gestures, I then arranged and scaled the model accordingly 
+  to match the dimensions of my apartment in the world space. While the model effectively covered the world space, 
+  it left a lot to be desired in terms of precision and alignment. Future iterations should explore image tracking in 
+  addition to world tracking, aiming for a more realistic virtual model that convincingly snaps to the room walls in view.
+</p>
+<h3>
+  <center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2TiGbH3ULl0" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center>
+</h3>
+<center>Floorplan Model: Demo</center>
+<h2>Wall Studs Model</h2>
+<p>
+    Using world tracking and model placement produced a less convincing result for the 3D Wall Studs model than for the 3D
+    Floorplan model. Using the ground floor as reference, the 3D model was placed in the world space according to the pivot 
+    point attached to bottom of the SceneKit model. As demonstrated, the model follows a vanishing point not aligned with 
+    the wall in the world space. Image tracking would be a promising solution for this model, as the model has minimal depth
+    and would stick well to a flat plane.
+</p>
+<h3>
+  <center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QAHIHzBK3BM" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center>
+</h3>
+<center>Wall Studs Model: Demo</center>
