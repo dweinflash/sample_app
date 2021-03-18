@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   get  '/ar_tools',  to: 'static_pages#ar_tools'
   get  '/ar_models', to: 'static_pages#ar_models'
   get  '/ar_inter',  to: 'static_pages#ar_inter'
+  get  '/deepfake',  to: 'static_pages#deepfake'
   get  '/contact',   to: 'static_pages#contact'
   get  '/signup',    to: 'users#new'
   post '/signup',    to: 'users#create'

@@ -1,0 +1,29 @@
+<% provide(:title, "Deepfakes") %>
+<h1>Deepfake Videos</h1>
+<h2>Summary</h2>
+<p>
+  Just as advances in machine learning gave rise to <a href="https://en.wikipedia.org/wiki/Deepfake">deepfake videos</a>, so to can modern machine 
+  learning models be put to use to realiably detect fake media content. In this project I set out to do just that – first using deep neural networks 
+  to generate deepfake videos, then applying neural networks to correctly distinguish between fake and unaltered media content. In each scenario, a 
+  range of different videos are used in order to evaluate the effectiveness of the proposed system.
+</p>
+<h3>
+  <center>
+    <%= image_tag "Deepfake.gif", :class => "image", :size => "500x200" %>
+  </center>
+</h3>
+<h2>Goals</h2>
+  <li>Utilize a generative deep neural network to create deepfake videos.</li>
+  <li>Train a neural network architecture to accurately identify deepfake videos.</li>
+  <li>Input a variety of altered media content to measure the effectiveness of each proposed system.</li>
+<h2>Takeaways</h2>
+  <li>The framework proposed in <a href="https://arxiv.org/abs/2003.00196"><i>First Order Motion Model for Image Animation</i></a> generates 
+      convincing deepfake videos.</li>
+  <li>The network proposed in <a href="https://arxiv.org/abs/2004.07676"><i>Video Face Manipulation Detection Through Ensemble of CNNs</i></a> 
+      consistently identifies fake media content.</li>
+  <li>Certain data augmentation operations are able to influence the classification results of the deepfake detection system.</li>
+<h2>Documents</h2>
+<h3>
+  <%= link_to image_tag("Slides.png", size: "80x100", alt: "Slides"), asset_path("Deepfake_Presentation.pdf") %>
+  <%= link_to image_tag("PDF.png", size: "80x100", alt: "Report"), asset_path("Deepfake_Report.pdf") %>
+</h3>
