@@ -1,0 +1,31 @@
+<% provide(:title, "Audio Search") %>
+<h1>Audio Search</h1>
+<h2>Summary</h2>
+<p>
+  This project introduces <a href="https://audio-search.herokuapp.com/">Audio Search</a>, a video transcription web service that
+  tries to address a problem I often encounter at work: Given a long recorded video, how do I skip to the part that interests me most?
+  Or put another way, if I know a long video briefly mentions a topic, how do I quickly seek to the part where the topic is mentioned? 
+  <i>Audio Search</i> confronts this problem by first transcribing a video using the <a href="https://cloud.google.com/speech-to-text">Google Cloud Speech-to-Text API</a>
+  and then converting the provided video dialog into an interactive transcript that users may search & click to seek to a certain point in a video.
+</p>
+<center>
+  <%= image_tag "AudioSearch_Architecture.png", :size => "600x300" %>
+</center>
+<h2>Goals</h2>
+<ul>
+  <li>Make use of an AI solution to convert a video's dialog to text.</li>
+  <li>Deploy a video hosting platform that is capable of uploading, transcribing and storing videos.</li>
+  <li>Use the words spoken in a video to perform keyword search and seek to a certain point in a video.</li>
+</ul>
+<h2>Takeaways</h2>
+<ul>
+  <li><a href="https://cloud.google.com/products/ai/">Google Cloud</a> makes it easy to take advantage of state-of-the-art AI solutions.</li>
+  <li>Video transcription processing time took on average 1 minute for every 5 minutes of video time.</li>
+  <li>Video transcribing service costs could add up if the service is scaled significantly.</li>
+</ul>
+
+<h2>Documents</h2>
+<h3>
+  <%= link_to image_tag("Slides.png", size: "80x100", alt: "Slides"), asset_path("AudioSearch_Presentation.pdf") %>
+  <%= link_to image_tag("GitHub.png", size: "90x100", alt: "GitHub"), 'https://github.com/dweinflash/TranscribeVideos' %>
+</h3>

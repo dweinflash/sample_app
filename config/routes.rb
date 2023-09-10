@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   get  '/help',      to: 'static_pages#help'
   get  '/about',     to: 'static_pages#about'
+  get  '/audio',     to: 'static_pages#audiosearch'
   get  '/cozmo',     to: 'static_pages#cozmo'
   get  '/sat',       to: 'static_pages#sat'
   get  '/android',   to: 'static_pages#android'
